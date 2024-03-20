@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.rawgit.com/zenorocha/clipboard.js/v1.5.3/dist/clipboard.min.js"></script>
+    <title>Encriptador De Texto</title>
+</head>
+<body>
+    <main>
+        
+        <div class="contenedorLogo">
+            <img src="imagenes/Logo.svg" alt="" class="logo">
+        </div>
+    
+        <div class="contenedorCajaTexto">
+            <textarea class="cajaTexto" id="cajaTexto" placeholder="Ingrese el texto aqui" rows="6"></textarea>
+        </div>
+        <div class="alerta">
+            <img src="imagenes/alerta.svg" alt="">
+            <p>Solo letras minusculas y sin acentos.</p>
+        </div>
+        <div class="contenedorBotones" id="contenedorBotones">
+            <button class="encriptar" id="encriptar" onclick="encriptar()">Encriptar</button>
+            <button class="desencriptar" id="desencriptar" onclick="desencriptar()">Desencriptar</button>
+        </div>
+        
+    
+        <section class="seccion2">
+            <div class="contenedorImgDesencriptar">
+             <img src="imagenes/gato-detective.jpg" alt="" id="imagen">
+            </div>
+            <div class="parrafo" id="parrafo">
+              <h3>Ningun mensaje fue <br> encontrado</h3>
+             <p>Ingrese el texto que deses encriptar o desencriptar</p>
+            </div>
+            <div class="contenedorBotonCopiar">
+             <button class="copiar" id="copiar" onclick="copiarMensaje('resultado')" data-clipboard-target="#resultado"> Copiar</button>
+            </div>
+            <div class="contenedorMensajeFinal">
+             <p class="resultado" id="resultado">
+                
+             </p>
+            </div>
+        </section>
+        <footer>
+             <p>&copy; JMRS 2024 </p>
+        </footer>
+    </main>
+    <script src="app.js"></script>
+    
+</body>
+</html>
